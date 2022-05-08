@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{37FAEBAA-1ED8-42C6-8E08-999C0F80D0C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Core\Application\Application.csproj", "{37FAEBAA-1ED8-42C6-8E08-999C0F80D0C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{FCACD369-4DB7-4448-BD87-BFC43BBED5E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Core\Domain\Domain.csproj", "{FCACD369-4DB7-4448-BD87-BFC43BBED5E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{1F857FBE-8DBF-4485-9048-EBE2EE68A0AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Infrastructure\Persistence\Persistence.csproj", "{1F857FBE-8DBF-4485-9048-EBE2EE68A0AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{A677182A-3FA2-47FC-BA81-D951617AFB90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "Presentation\WebApi\WebApi.csproj", "{A677182A-3FA2-47FC-BA81-D951617AFB90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{38281F26-35D4-4072-B503-A4E13F3A0AAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{2CB7C901-4719-4162-B7D7-CCAE087D0025}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{46CAEEB2-C7A6-4A43-BEA8-0EA0E2ACA70F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +42,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{37FAEBAA-1ED8-42C6-8E08-999C0F80D0C9} = {38281F26-35D4-4072-B503-A4E13F3A0AAC}
+		{FCACD369-4DB7-4448-BD87-BFC43BBED5E4} = {38281F26-35D4-4072-B503-A4E13F3A0AAC}
+		{1F857FBE-8DBF-4485-9048-EBE2EE68A0AE} = {2CB7C901-4719-4162-B7D7-CCAE087D0025}
+		{A677182A-3FA2-47FC-BA81-D951617AFB90} = {46CAEEB2-C7A6-4A43-BEA8-0EA0E2ACA70F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {87976C30-8D59-4335-96E9-22008FB6D1B5}
